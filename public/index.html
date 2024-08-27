@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Lorem Ipsum</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Record Table</h1>
+        <button id="addRecordBtn">Add Record</button>
+        <table id="recordTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                    <th>Column 5</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <div id="recordModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="recordForm">
+                <input type="hidden" id="recordId">
+                <input type="text" id="column1" placeholder="Column 1" required>
+                <input type="text" id="column2" placeholder="Column 2" required>
+                <input type="text" id="column3" placeholder="Column 3" required>
+                <input type="text" id="column4" placeholder="Column 4" required>
+                <input type="text" id="column5" placeholder="Column 5" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="confirmationDialog" class="confirmation-dialog">
+        <div class="confirmation-dialog-content">
+            <p id="confirmationMessage">Are you sure?</p>
+            <button id="confirmYes" class="confirm-btn">Yes</button>
+            <button id="confirmNo" class="confirm-btn">No</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
